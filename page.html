@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alert For Piped Water Supply</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="js/jquery-ui-1.10.3.custom/css/ui-lightness/jquery-ui-1.10.3.custom.css" />
+<link rel="stylesheet" href="css/MarkerCluster.css" />
+<link rel="stylesheet" href="css/MarkerCluster.Default.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="css/MarkerCluster.Default.ie.css" /><![endif]-->
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" /><![endif]-->
+
+
+
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js" ></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+<script src="js/leaflet.markercluster-src.js"></script>
+
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+
+
+
+<script type="text/javascript" src="/nic/Irridescent/proj4/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<script type="text/javascript" src="/nic/Irridescent/proj4/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="/nic/Irridescent/proj4/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+		});
+	</script>
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+body {
+			max-width: 100%;
+			margin: 0 auto;
+		}
+		
+	</style>
+
+<script src="js/script.js" ></script>
+</head>
+<body>
+	<div id="header"><h1>Piped Water Alert System</h1><h4>Alerts for habitations</h4></div>
+   <div id="map"></div>
+   <div id="search-controls"> 
+	<form id="searh-form" class="form-search">
+		<input id="search" type="text" class="input-medium search-query" placeholder="Type location" style="width: 80%;" />
+		<div style="margin: 20px 0;">
+			<div id="percentage" style="margin: 20px 0;" >Range (%): <span></span></div>
+			<div id="slider-range" style="height: 10px;"></div>
+		</div>
+		<input type="hidden" id="level" />
+		<button id="search-button" type="submit" class="btn btn-primary">Search</button>
+		
+	</form>
+	</div>
+</body>
+</html>
